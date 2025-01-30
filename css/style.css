@@ -493,6 +493,26 @@ img{
 	background-color:#ffffff;
 }
 
+.whatsapp-btn {
+	color: #f5f5f5 !important;
+	background-color: #25d366 !important;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+}
+
+.whatsapp-btn i {
+	font-size: 2rem !important;
+}
+
+.whatsapp-btn:hover {
+	color: #25d366 !important;
+	background-color: #f5f5f5 !important;
+}
+
+
 .main-header .main-box .logo-box{
 	position:relative;
 	float:left;
