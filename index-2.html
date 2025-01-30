@@ -94,10 +94,10 @@
                   <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
                       <li>
-                        <a href="#">Quero Conhecer</a>
+                        <a href="#Orçamento">Orçamento</a>
                       </li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="services.html">Services</a></li>
+                      <li><a href="#transporte-seguro">Sobre Transporte</a></li>
+                      <li><a href="#Benefícios">Benefícios</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -278,7 +278,7 @@
       <!--End Main Slider-->
 
       <!-- Booking Form -->
-      <section class="booking-form">
+      <section id="Orçamento" class="booking-form">
         <div class="auto-container">
           <div
             class="booking-form-inner wow fadeInUp"
@@ -302,21 +302,46 @@
                     </div>
                   </div>
                   <!-- telefone -->
-                  <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                    <div class="group-inner">
-                      <div class="field-label">Seu Telefone</div>
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="(00) 91234-5678"
-                        pattern="[0-9]{10,11}"
-                        title="Digite um número válido com 10 ou 11 dígitos"
-                        required
-                      />
-                    </div>
-                  </div>
+<div class="form-group col-md-4 col-sm-6 col-xs-12">
+  <div class="group-inner">
+    <div class="field-label">Seu Telefone</div>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="(00) 91234-5678"
+      required
+    />
+  </div>
+</div>
 
-                  <!-- Tipo de Veículo -->
+<script>
+  document.getElementById('phone').addEventListener('input', function(e) {
+    // Remove qualquer coisa que não seja número
+    let phone = e.target.value.replace(/\D/g, '');
+    
+    // Formatação do número
+    if (phone.length <= 10) {
+      // Formato para 10 dígitos (sem DDD ou com DDD)
+      phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+    } else {
+      // Formato para 11 dígitos (com DDD)
+      phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+    }
+    
+    // Atualiza o campo com o número formatado
+    e.target.value = phone;
+  });
+
+  // Impede a inserção de letras
+  document.getElementById('phone').addEventListener('keypress', function(e) {
+    // Permite apenas números
+    if (!/\d/.test(e.key)) {
+      e.preventDefault();
+    }
+  });
+</script>
+<!-- Tipo de Veículo -->
                   <div class="form-group col-md-4 col-sm-6 col-xs-12">
                     <div class="group-inner">
                       <div class="field-label">
@@ -408,7 +433,7 @@
       </section>
 
       <!--Cars Select Section-->
-      <section class="cars-select-section">
+      <sectionid= id="transporte-seguro" class="cars-select-section">
         <div class="auto-container">
           <div class="content-container">
             <!--Sec Title-->
@@ -504,7 +529,7 @@
       <!--End Cars Select Section-->
 
       <!--Services Block-->
-      <section class="services-section-one">
+      <section id="Benefícios" class="services-section-one">
         <div class="auto-container">
           <div class="content-container">
             <div class="sec-title">
@@ -635,52 +660,52 @@
             <ul class="sponsors-carousel">
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/1.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/audi.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/2.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/voks.pgn.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/3.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/RAM.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/4.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/toyota.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/5.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/hyundai.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/1.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/audi.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/2.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/voks.pgn.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/3.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/RAM.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/4.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/toyota.png.png" alt="" /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/5.png" alt="" /></a>
+                  <a href="#"><img src="images/clients/hyundai.png.png" alt="" /></a>
                 </figure>
               </li>
             </ul>
