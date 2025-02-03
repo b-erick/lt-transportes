@@ -285,61 +285,60 @@
             data-wow-delay="0ms"
             data-wow-duration="1500ms"
           >
-            <!-- Default Form -->
-            <div class="default-form">
-              <form method="post">
-                <div class="row clearfix">
+                  <!-- Default Form -->
+                 <div class="default-form">
+                   <form method="post">
+                     <div class="row clearfix">
                   <!-- Nome -->
-                  <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                    <div class="group-inner">
-                      <div class="field-label">Seu Nome</div>
+                   <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                      <div class="group-inner">
+                         <div class="field-label">Seu Nome</div>
                       <input
                         type="text"
                         name="name"
                         placeholder="Digite seu nome"
                         required
-                      />
-                    </div>
+                        />
+                     </div>
                   </div>
                   <!-- telefone -->
-<div class="form-group col-md-4 col-sm-6 col-xs-12">
-  <div class="group-inner">
-    <div class="field-label">Seu Telefone</div>
-    <input
-      type="tel"
-      id="phone"
-      name="phone"
-      placeholder="(00) 91234-5678"
-      required
-    />
-  </div>
-</div>
+                  <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                     <div class="group-inner">
+                       <div class="field-label">Seu Telefone</div>
+                 <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(00) 91234-5678"
+                  required/>
+                  
+                </div>
+               </div>
 
-<script>
-  document.getElementById('phone').addEventListener('input', function(e) {
-    // Remove qualquer coisa que não seja número
-    let phone = e.target.value.replace(/\D/g, '');
+                    <script>
+               document.getElementById('phone').addEventListener('input', function(e) {
     
-    // Formatação do número
-    if (phone.length <= 10) {
-      // Formato para 10 dígitos (sem DDD ou com DDD)
-      phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
-    } else {
-      // Formato para 11 dígitos (com DDD)
-      phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
-    }
+                      // Remove qualquer coisa que não seja número
+                   let phone = e.target.value.replace(/\D/g, '');
     
-    // Atualiza o campo com o número formatado
-    e.target.value = phone;
-  });
-
-  // Impede a inserção de letras
-  document.getElementById('phone').addEventListener('keypress', function(e) {
-    // Permite apenas números
-    if (!/\d/.test(e.key)) {
-      e.preventDefault();
-    }
-  });
+                     // Formatação do número
+                  if (phone.length <= 10) {
+                    // Formato para 10 dígitos (sem DDD ou com DDD)
+                   phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+                  } else {
+                   // Formato para 11 dígitos (com DDD)
+                   phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+                  }
+                   // Atualiza o campo com o número formatado
+                   e.target.value = phone;
+                   });
+                  // Impede a inserção de letras
+                  document.getElementById('phone').addEventListener('keypress', function(e) {
+                 // Permite apenas números
+                 if (!/\d/.test(e.key)) {
+                e.preventDefault();
+                 }
+                 });
 </script>
 <!-- Tipo de Veículo -->
                   <div class="form-group col-md-4 col-sm-6 col-xs-12">
@@ -724,17 +723,13 @@
               <div class="footer-column col-md-4 col-sm-4 col-xs-12">
                 <div class="footer-widget logo-widget">
                   <div class="logo-box">
-                    <img src="images/footer-logo.png" alt="" />
+                    <img src="images/logo.png" alt="" />
                   </div>
                   <div class="text">
-                    Aenean a dolor vulnerum aperire accedunt, mortui iam vivam.
-                    Alii missing oculis aliorum sicut serpere crabs nostram.
+                    Somos uma transportadora especializada no transporte seguro e eficiente de veículos,
+                     oferecendo soluções logísticas rápidas e confiáveis para os nossos clientes.
                   </div>
                   <ul class="list-style">
-                    <li>
-                      <span class="icon flaticon-travel"></span>361 A Napier
-                      Street, Knoxville, Newyork
-                    </li>
                     <li>
                       <span class="icon flaticon-technology-1"></span>+091 234
                       5678
@@ -747,46 +742,7 @@
                 </div>
               </div>
 
-              <!--Footer Column-->
-              <div class="footer-column col-md-4 col-sm-4 col-xs-12">
-                <div class="footer-widget posts-widget">
-                  <h2>Recent Posts</h2>
-                  <div class="widget-content">
-                    <div class="posts">
-                      <div class="post">
-                        <figure class="post-thumb">
-                          <img
-                            src="images/resource/post-thumb-1.jpg"
-                            alt=""
-                          /><a href="#" class="overlay-link"
-                            ><span class="flaticon-plus-1"></span
-                          ></a>
-                        </figure>
-                        <div class="desc-text">
-                          <a href="#">Providing security and quality cars</a>
-                        </div>
-                        <div class="time">27 Sep 2016 / Stephen Joe</div>
-                      </div>
-                      <div class="post">
-                        <figure class="post-thumb">
-                          <img
-                            src="images/resource/post-thumb-2.jpg"
-                            alt=""
-                          /><a href="#" class="overlay-link"
-                            ><span class="flaticon-plus-1"></span
-                          ></a>
-                        </figure>
-                        <div class="desc-text">
-                          <a href="#">Car hire on world wide</a>
-                        </div>
-                        <div class="time">27 Sep 2016 / Stephen Joe</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!--Footer Column-->
+               <!--Footer Column-->
               <div class="footer-column col-md-4 col-sm-4 col-xs-12">
                 <div class="footer-widget gallery-widget">
                   <h2>Gallery</h2>
@@ -863,26 +819,10 @@
         </div>
 
         <!--Footer Bottom-->
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="row clearfix">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <ul class="footer-nav">
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Our Cars</a></li>
-                  <li><a href="#">Service Rates</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                     <div class="col-md-6 col-sm-6 col-xs-12 text-right">
                 <div class="copyright">
                   Copyright &copy; 2017 All Rights Reserved. Zagreb
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
       </footer>
     </div>
     <!--End pagewrapper-->

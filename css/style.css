@@ -65,7 +65,7 @@
 ====================================================================
 
  ***/
-
+html {scroll-behavior:smooth;}
 body {
 	font-family: 'Catamaran', sans-serif;
 	font-size:14px;
@@ -1998,7 +1998,7 @@ img{
 }
 
 .footer-style-two .footer-widget{
-	margin-bottom:30px;	
+	margin-bottom:0px;	
 }
 
 .footer-style-two .footer-widget .logo-box{
@@ -2016,7 +2016,7 @@ img{
 .footer-style-two .footer-upper{
 	position:relative;
 	padding:80px 0px 50px;
-	background:url(../images/resource/footer-botom-layer.png) right bottom no-repeat;
+	background:#232323;
 }
 
 .list-style{
@@ -2149,15 +2149,15 @@ img{
 
 .footer-style-two .gallery-widget .image{
 	position:relative;
-	float:left;
+	float:right;
 	width:25%;
-	padding:0px 10px 8px 0px;	
+	padding:10px 10px 8px 0px;	
 }
 
 .footer-style-two .gallery-widget .image img{
 	position:relative;
 	display:block;
-	width:100%;
+	width:200%;
 	transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;
 	-webkit-transition:all 0.5s ease;
