@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Zagreb HTML Template | Homepage Two</title>
+    <meta charset="UTF-8" />
+    <title>Transporte Seguro e Confiável de Veículos | LT Transportes</title>
+    <meta
+      name="description"
+      content="A LT Transportes oferece soluções ágeis e seguras para o transporte de carros e motos. Garantimos preço fixo, atendimento 24 horas e serviço premiado. Contate-nos pelo telefone (11) 9 9481-9929 ou e-mail lt.transp@gmail.com."
+    />
+    <meta
+      name="keywords"
+      content="transporte de veículos, transporte de carros, transporte de motos, transporte seguro, LT Transportes, soluções logísticas, preço fixo, atendimento 24 horas"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="LT Transportes" />
+    <meta
+      property="og:title"
+      content="Transporte Seguro e Confiável de Veículos | LT Transportes"
+    />
+    <meta
+      property="og:description"
+      content="Oferecemos soluções ágeis e seguras para o transporte de carros e motos. Contate-nos para um orçamento personalizado."
+    />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:url" content="https://lttransportedeveiculos.com.br" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Transporte Seguro e Confiável de Veículos | LT Transportes"
+    />
+    <meta
+      name="twitter:description"
+      content="Oferecemos soluções ágeis e seguras para o transporte de carros e motos. Contate-nos para um orçamento personalizado."
+    />
+    <meta name="twitter:image" content="images/logo.png" />
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/revolution-slider.css" rel="stylesheet" />
@@ -30,32 +61,6 @@
 
       <!-- Main Header-->
       <header class="main-header header-style-two">
-        <!-- Header Top -->
-        <div class="header-top">
-          <div class="auto-container">
-            <div class="clearfix">
-              <!--Top Left-->
-              <div class="top-right">
-                <ul class="clearfix">
-                  <li>
-                    <a href="tel:11994819929">
-                      <span class="icon flaticon-technology-1"></span> (11) 9
-                      9481-9929
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:lt.transp@gmail.com">
-                      <span class="icon flaticon-envelope-3"></span>
-                      lt.transp@gmail.com
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Header Top End -->
-
         <!-- Main Box -->
         <div class="main-box">
           <div class="auto-container">
@@ -264,7 +269,7 @@
                   data-start="500"
                   data-easing="easeOutExpo"
                 >
-                  <a href="#" class="theme-btn whatsapp-btn btn-style-one"
+                  <a href="https://wa.me/5511994819929" target="_blank" class="theme-btn whatsapp-btn btn-style-one"
                     ><i class="fa fa-whatsapp"></i> Fale com a gente</a
                   >
                 </div>
@@ -285,62 +290,71 @@
             data-wow-delay="0ms"
             data-wow-duration="1500ms"
           >
-                  <!-- Default Form -->
-                 <div class="default-form">
-                   <form method="post">
-                     <div class="row clearfix">
+            <!-- Default Form -->
+            <div class="default-form">
+              <form method="post">
+                <div class="row clearfix">
                   <!-- Nome -->
-                   <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                      <div class="group-inner">
-                         <div class="field-label">Seu Nome</div>
+                  <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                    <div class="group-inner">
+                      <div class="field-label">Seu Nome</div>
                       <input
                         type="text"
                         name="name"
                         placeholder="Digite seu nome"
                         required
-                        />
-                     </div>
+                      />
+                    </div>
                   </div>
                   <!-- telefone -->
                   <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                     <div class="group-inner">
-                       <div class="field-label">Seu Telefone</div>
-                 <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="(00) 91234-5678"
-                  required/>
-                  
-                </div>
-               </div>
+                    <div class="group-inner">
+                      <div class="field-label">Seu Telefone</div>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(00) 91234-5678"
+                        required
+                      />
+                    </div>
+                  </div>
 
-                    <script>
-               document.getElementById('phone').addEventListener('input', function(e) {
-    
-                      // Remove qualquer coisa que não seja número
-                   let phone = e.target.value.replace(/\D/g, '');
-    
-                     // Formatação do número
-                  if (phone.length <= 10) {
-                    // Formato para 10 dígitos (sem DDD ou com DDD)
-                   phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
-                  } else {
-                   // Formato para 11 dígitos (com DDD)
-                   phone = phone.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
-                  }
-                   // Atualiza o campo com o número formatado
-                   e.target.value = phone;
-                   });
-                  // Impede a inserção de letras
-                  document.getElementById('phone').addEventListener('keypress', function(e) {
-                 // Permite apenas números
-                 if (!/\d/.test(e.key)) {
-                e.preventDefault();
-                 }
-                 });
-</script>
-<!-- Tipo de Veículo -->
+                  <script>
+                    document
+                      .getElementById("phone")
+                      .addEventListener("input", function (e) {
+                        // Remove qualquer coisa que não seja número
+                        let phone = e.target.value.replace(/\D/g, "");
+
+                        // Formatação do número
+                        if (phone.length <= 10) {
+                          // Formato para 10 dígitos (sem DDD ou com DDD)
+                          phone = phone.replace(
+                            /^(\d{2})(\d{5})(\d{4})$/,
+                            "($1) $2-$3"
+                          );
+                        } else {
+                          // Formato para 11 dígitos (com DDD)
+                          phone = phone.replace(
+                            /^(\d{2})(\d{5})(\d{4})$/,
+                            "($1) $2-$3"
+                          );
+                        }
+                        // Atualiza o campo com o número formatado
+                        e.target.value = phone;
+                      });
+                    // Impede a inserção de letras
+                    document
+                      .getElementById("phone")
+                      .addEventListener("keypress", function (e) {
+                        // Permite apenas números
+                        if (!/\d/.test(e.key)) {
+                          e.preventDefault();
+                        }
+                      });
+                  </script>
+                  <!-- Tipo de Veículo -->
                   <div class="form-group col-md-4 col-sm-6 col-xs-12">
                     <div class="group-inner">
                       <div class="field-label">
@@ -493,8 +507,9 @@
                             Utilizamos caminhões cegonha com dois andares e
                             capacidade para até 12 veículos.<br />
                             Nossa estrutura permite um transporte eficiente,
-                            seguro e econômico, ideal tanto para transportes 
-                            de um único veículo ou para uma operações de grande escala.
+                            seguro e econômico, ideal tanto para transportes de
+                            um único veículo ou para uma operações de grande
+                            escala.
                           </div>
                         </div>
                       </div>
@@ -513,7 +528,8 @@
                             Contamos com motoristas experientes e profissionais
                             especializados no manuseio de veículos pesados.<br />
                             Todos são devidamente capacitados para garantir que
-                            cada transporte siga as normas de segurança e legislação vigente.                            
+                            cada transporte siga as normas de segurança e
+                            legislação vigente.
                           </div>
                         </div>
                       </div>
@@ -534,7 +550,7 @@
             <div class="sec-title">
               <div class="inner-title-box">
                 <h2>Benefícios Exclusivos <br /></h2>
-                <h4 class="rotate-title">SERVICES</h4>
+                <h4 class="rotate-title highligts-color-2">Benefícios</h4>
               </div>
             </div>
 
@@ -659,52 +675,72 @@
             <ul class="sponsors-carousel">
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/audi.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/audi.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/voks.pgn.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/voks.pgn.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/RAM.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/RAM.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/toyota.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/toyota.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/hyundai.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/hyundai.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/audi.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/audi.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/voks.pgn.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/voks.pgn.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/RAM.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/RAM.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/toyota.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/toyota.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
               <li class="slide-item">
                 <figure class="image-box">
-                  <a href="#"><img src="images/clients/hyundai.png.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="images/clients/hyundai.png.png" alt=""
+                  /></a>
                 </figure>
               </li>
             </ul>
@@ -718,34 +754,46 @@
         <!--Footer Upper-->
         <div class="footer-upper">
           <div class="auto-container">
-            <div class="row" style="display: flex; align-items: center; justify-content: space-between;">
+            <div
+              class="row"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
               <!--Footer Column-->
               <div class="footer-column col-md-5">
                 <div class="footer-widget logo-widget">
                   <div class="logo-box">
-                    <img src="images/logo.png" alt="" />
+                    <img src="images/logo.png" alt="logo" class="img-fluid" />
                   </div>
                   <div class="text">
-                    Somos uma transportadora especializada no transporte seguro e eficiente de veículos,
-                     oferecendo soluções logísticas rápidas e confiáveis para os nossos clientes.
+                    Somos uma transportadora especializada no transporte seguro
+                    e eficiente de veículos, oferecendo soluções logísticas
+                    rápidas e confiáveis para os nossos clientes.
                   </div>
                   <ul class="list-style">
                     <li>
-                      <span class="icon flaticon-technology-1"></span>+091 234
-                      5678
+                      <span class="icon fa fa-phone"></span>
+                      <a href="tel:11994819929" target="_blank" rel="noreferrer"
+                        >(11) 9 9481-9929
+                      </a>
                     </li>
                     <li>
-                      <span class="icon flaticon-planet-earth"></span
-                      >info@zagreb.com
+                      <span class="icon fa fa-envelope"></span
+                      ><a href="mailto:">info@zagreb.com</a>
                     </li>
                   </ul>
                 </div>
               </div>
 
-               <!--Footer Column-->
+              <!--Footer Column-->
               <div class="footer-column col-md-6">
                 <div class="footer-widget gallery-widget">
-                  <h2>Gallery</h2>
+                  <h2 class="highligts-color">
+                    Confira um pouco do nosso serviço
+                  </h2>
                   <div class="clearfix">
                     <figure class="image">
                       <a
@@ -819,18 +867,23 @@
         </div>
 
         <!--Footer Bottom-->
-                     <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-                <div class="copyright">
-                  Copyright &copy; 2017 All Rights Reserved. Zagreb
-            </div>
+        <div class="col-12 text-center footer-bottom">
+          <div class="copyright">
+            Copyright &copy; 2025 Todos os direitos reservados. LT Transporte de
+            Veículos
+          </div>
+        </div>
       </footer>
     </div>
     <!--End pagewrapper-->
 
-    <!--Scroll to top-->
-    <div class="scroll-to-top scroll-to-target" data-target="html">
-      <span class="fa fa-long-arrow-up"></span>
-    </div>
+    <a
+      href="https://wa.me/5511994819929"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp whatsapp-icon"></i>
+    </a>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
