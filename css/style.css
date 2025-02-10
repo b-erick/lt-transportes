@@ -65,7 +65,10 @@
 ====================================================================
 
  ***/
-html {scroll-behavior:smooth;}
+html
+ {scroll-behavior:smooth;
+
+}
 body {
 	font-family: 'Catamaran', sans-serif;
 	font-size:14px;
@@ -2160,6 +2163,7 @@ img{
 .footer-style-two .gallery-widget{
 	position:relative;
 }
+	
 
 .footer-style-two .gallery-widget .image{
 	position:relative;
