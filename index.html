@@ -269,7 +269,10 @@
                   data-start="500"
                   data-easing="easeOutExpo"
                 >
-                  <a href="https://wa.me/5511994819929" target="_blank" class="theme-btn whatsapp-btn btn-style-one"
+                  <a
+                    href="https://wa.me/5511994819929"
+                    target="_blank"
+                    class="theme-btn whatsapp-btn btn-style-one"
                     ><i class="fa fa-whatsapp"></i> Fale com a gente</a
                   >
                 </div>
@@ -754,14 +757,7 @@
         <!--Footer Upper-->
         <div class="footer-upper">
           <div class="auto-container">
-            <div
-              class="row"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-              "
-            >
+            <div class="row" style="justify-content: space-between">
               <!--Footer Column-->
               <div class="footer-column col-md-5">
                 <div class="footer-widget logo-widget">
@@ -791,7 +787,7 @@
               <!--Footer Column-->
               <div class="footer-column col-md-6">
                 <div class="footer-widget gallery-widget">
-                  <h2 class="highligts-color">
+                  <h2 class="highligts-color" style="padding-top: 2rem">
                     Confira um pouco do nosso serviço
                   </h2>
                   <div class="clearfix">
@@ -816,7 +812,7 @@
                         href="images/gallery/GA.3.jpeg"
                         class="lightbox-image"
                         title="Caption Here"
-                      ><img src="images/gallery/GA.3.jpeg" alt=""
+                        ><img src="images/gallery/GA.3.jpeg" alt=""
                       /></a>
                     </figure>
                     <figure class="image">
@@ -856,7 +852,7 @@
                         href="images/gallery/GA.8.jpeg"
                         class="lightbox-image"
                         title="Caption Here"
-                        ><img src="images/gallery/GA.8.jpeg "alt=""
+                        ><img src="images/gallery/GA.8.jpeg " alt=""
                       /></a>
                     </figure>
                   </div>
@@ -884,6 +880,48 @@
     >
       <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>
+    <script>
+      document
+        .querySelector(".default-form form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // impede o envio padrão do formulário
+
+          // Recupera os valores dos campos
+          var name = document.querySelector("input[name='name']").value;
+          var phone = document.querySelector("input[name='phone']").value;
+          var vehicle = document.querySelector("input[name='vehicle']").value;
+          var year = document.querySelector("input[name='year']").value;
+          var working_status = document.querySelector(
+            "select[name='working_status']"
+          ).value;
+          var modifications = document.querySelector(
+            "input[name='modifications']"
+          ).value;
+          var auction = document.querySelector("select[name='auction']").value;
+          var pickup_or_delivery = document.querySelector(
+            "select[name='pickup_or_delivery']"
+          ).value;
+
+          // Monta a mensagem, considerando que os campos possam estar vazios
+          var message = "Olá, gostaria de solicitar um orçamento. Segue os dados do meu veículo:\n";
+          if (name) message += "Nome: " + name + "\n";
+          if (phone) message += "Telefone: " + phone + "\n";
+          if (vehicle) message += "Modelo: " + vehicle + "\n";
+          if (year) message += "Ano: " + year + "\n";
+          if (working_status) message += "Funciona: " + working_status + "\n";
+          if (modifications) message += "Modificações: " + modifications + "\n";
+          if (auction) message += "É de leilão: " + auction + "\n";
+          if (pickup_or_delivery)
+            message += "Retirada ou Entrega: " + pickup_or_delivery + "\n";
+
+          // Codifica a mensagem para ser incluída na URL
+          var urlMessage = encodeURIComponent(message);
+          var whatsappURL = "https://api.whatsapp.com/send?phone=5511994819929&text=" + urlMessage;
+
+          // Abre a URL do WhatsApp (pode abrir em nova aba)
+          window.open(whatsappURL, "_blank");
+        });
+    </script>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
