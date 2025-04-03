@@ -778,7 +778,9 @@
                     </li>
                     <li>
                       <span class="icon fa fa-envelope"></span
-                      ><a href="mailto:">info@zagreb.com</a>
+                      ><a href="mailto:lt.transp01@gmail.com"
+                        >lt.transp01@gmail.com</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -825,14 +827,6 @@
                     </figure>
                     <figure class="image">
                       <a
-                        href="images/gallery/GA.5.jpeg"
-                        class="lightbox-image"
-                        title="Caption Here"
-                        ><img src="images/gallery/GA.5.jpeg" alt=""
-                      /></a>
-                    </figure>
-                    <figure class="image">
-                      <a
                         href="images/gallery/GA.6.jpg"
                         class="lightbox-image"
                         title="Caption Here"
@@ -845,14 +839,6 @@
                         class="lightbox-image"
                         title="Caption Here"
                         ><img src="images/gallery/GA.7.jpg" alt=""
-                      /></a>
-                    </figure>
-                    <figure class="image">
-                      <a
-                        href="images/gallery/GA.8.jpeg"
-                        class="lightbox-image"
-                        title="Caption Here"
-                        ><img src="images/gallery/GA.8.jpeg " alt=""
                       /></a>
                     </figure>
                   </div>
@@ -903,7 +889,8 @@
           ).value;
 
           // Monta a mensagem, considerando que os campos possam estar vazios
-          var message = "Olá, gostaria de solicitar um orçamento. Segue os dados do meu veículo:\n";
+          var message =
+            "Olá, gostaria de solicitar um orçamento. Segue os dados do meu veículo:\n";
           if (name) message += "Nome: " + name + "\n";
           if (phone) message += "Telefone: " + phone + "\n";
           if (vehicle) message += "Modelo: " + vehicle + "\n";
@@ -916,7 +903,9 @@
 
           // Codifica a mensagem para ser incluída na URL
           var urlMessage = encodeURIComponent(message);
-          var whatsappURL = "https://api.whatsapp.com/send?phone=5511994819929&text=" + urlMessage;
+          var whatsappURL =
+            "https://api.whatsapp.com/send?phone=5511994819929&text=" +
+            urlMessage;
 
           // Abre a URL do WhatsApp (pode abrir em nova aba)
           window.open(whatsappURL, "_blank");
