@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+
+Sitemap: https://lttransporte.com.br/sitemap.xml
